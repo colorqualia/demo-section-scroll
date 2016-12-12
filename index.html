@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <title>sample page</title>
+
+<!-- CSS -->
+<link rel="index" href="index.html">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
+
+<!-- JavaScript -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<script>
+jQuery(document).ready(function($) {
+    $('nav').on('click', function() {
+
+        if ($(this).hasClass('down')) {
+            var movePos = $(window).scrollTop() + $(window).height();
+        }
+        if ($(this).hasClass('up')) {
+            var movePos = $(window).scrollTop() - $(window).height();
+        }
+
+        $('html, body').animate({
+            scrollTop: movePos
+        }, 1000);
+    })
+});
+</script>
+
+</head>
+<body>
+  <div class="main">
+
+    <section>
+      <!-- <nav class="up">
+        <ul>
+          <li><a href="#" title=""><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></a></li>
+        </ul>
+      </nav> -->
+      <p>吾</p>
+      <nav class="down">
+        <ul>
+          <li><a href="#" title=""><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a></li>
+        </ul>
+      </nav>
+    </section>
+
+    <section>
+      <nav class="up">
+        <ul>
+          <li><a href="#" title=""><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></a></li>
+        </ul>
+      </nav>
+      <p>唯</p>
+      <nav class="down">
+        <ul>
+          <li><a href="#" title=""><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a></li>
+        </ul>
+      </nav>
+    </section>
+
+    <section>
+      <nav class="up">
+        <ul>
+          <li><a href="#" title=""><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></a></li>
+        </ul>
+      </nav>
+      <p>足</p>
+      <nav class="down">
+        <ul>
+          <li><a href="#" title=""><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a></li>
+        </ul>
+      </nav>
+    </section>
+
+    <section>
+      <nav class="up">
+        <ul>
+          <li><a href="#" title=""><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></a></li>
+        </ul>
+      </nav>
+      <p>知</p>
+      <!-- <nav class="down">
+        <ul>
+          <li><a href="#" title=""><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a></li>
+        </ul>
+      </nav> -->
+    </section>
+
+  </div>
+
+  <footer>
+    <div class="zen">
+      <div>
+        <a href="https://ja.wikipedia.org/wiki/%E9%BE%8D%E5%AE%89%E5%AF%BA#.E3.81.9D.E3.81.AE.E4.BB.96" target="_blank">吾唯足知(われただたることをしる)</a>
+      </div>
+      <span>ｷﾀ━━ﾟ+.ヽ(≧▽≦)ﾉ.+ﾟ━━ ｯ !</span>
+    </div>
+  </footer>
+
+</body>
+</html>
